@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+.content{
+    position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+    </style>
+    s
+</head>
+<body>
+    <center><img src="payment.png"></center>
+    <center><img src="https://media4.giphy.com/media/hWco3fzBujt2CqaQBB/giphy.gif"></center>
+    <div style="text-align:center;" class="content">
+        <h1>Thank you!</h1>
+        <p>Your order has been placed successfully</p>
+        <p>Going back to home in <span id="timer"></span>s.</p>
+        </div>
+        <script type="text/javascript">
+        var count = 5;
+        var redirect = "mainpage.html";
+        function countDown() {
+        if(count >= 0){
+        document.getElementById("timer").innerHTML = count--;
+        setTimeout("countDown()", 1000);
+        }else{
+        window.location.href = redirect;
+        }
+        }
+        countDown();
+        </script>
+</body>
+</html>
