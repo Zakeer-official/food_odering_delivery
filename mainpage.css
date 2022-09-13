@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav{
+    width: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 10px 10px 50px;
+    display: flex;
+    margin: 20px auto;
+    text-align: justify-all;
+    justify-content: space-between;
+    float: left;
+    height: 70px;
+}
+
+nav .logo{
+    width: 50px;
+    left: 0;
+}
+nav ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-family: arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out; 
+}
+nav ul li:hover{
+    text-decoration: underline;
+}
+.callout {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+  }
+  
+.callout-header {
+    padding: 25px 15px;
+    background: #555;
+    font-size: 30px;
+    color: white;
+  }
+  
+.callout-container {
+    padding: 15px;
+    background-color: #ccc;
+    color: black
+  }
+  
+.closebtn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+.closebtn:hover {
+    color: lightgrey;
+  }
+
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.content h1{
+    font-size: 160px;
+    color: #fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+button{
+    width: 200px;
+    padding: 5px 0;
+    text-align: center;
+    margin: 30px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 24px;
+}
+
+.content span{
+    background: #ff6347;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.vishnu{
+    max-width: 1170px;
+    margin: auto;
+}
+.bharath{
+    display: flex;
+    flex-wrap: wrap;
+}
+.arvind ul{
+    list-style: none;
+}
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+}
+.arvind{
+    width: 20%;
+    padding: 0px 5px;
+    margin-left: 55px;
+    
+}
+.arvind h3{
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    color: #fff;
+    padding-right: 30px;
+}
+.arvind h3::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.arvind ul li{
+    margin-bottom: 0px;
+    padding: 5px 5px;
+}
+.arvind ul li a{
+    font-size: 18px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.arvind ul li a:hover{
+    color: #fff;
+    padding-left: 8px;
+}
+/*---------------------------- testimonials -----------------------------*/
+#testimonials
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+#testimonials .col-md-4
+{
+    padding: 10px 30px;
+}
+#testimonials img
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: -30px;
+    margin-top: -40px;
+    border: 5px solid #fff;
+    margin-bottom: 30px;
+}
+.review
+{
+    font-size: 16px;
+    padding: 10px 10px 10px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.2);
+}
+.review .fa-twitter
+{
+    color: #013f7e;
+}
+#testimonials span
+{
+    color: #013f7e;
+    font-weight: 600;
+    font-size: 18px;
+}
+#testimonials h1
+{
+    margin-bottom: 20px;
+    color: #013f7e;
+}
+#testimonials p
+{
+    padding-bottom: 20px;
+}
+#testimonials .middle
+{
+    margin-bottom: -30px;
+    margin-top:  -30px;
+}
+
+/*-------------------- mobile fitting ---------------*/
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}

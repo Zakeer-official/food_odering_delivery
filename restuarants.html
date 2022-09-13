@@ -1,0 +1,227 @@
+<!doctype.html>
+<html>
+    <head>
+        <title > Restaurants</title>
+        <link rel="stylesheet" href="mainpage.css">
+        <style>
+            #service,#rest-service{
+                color: red
+                width: 100%;
+                padding: 80px 0 40px 0px;
+                background: linear-gradient(to right,skyblue,lightgreen);
+                text-shadow: 0px 0px 3px #ff0000;
+            }
+            .swipe img{
+                width: 150px;
+                height: 150px;
+                border-radius:  25px;
+                padding: 10px;
+                
+            }
+            .bor img{
+                width: 150px;
+                height: 150px;
+                padding: 0px;
+                border: 2px solid #fff;
+                box-shadow: 10px 10px 5px linear-gradient:red;
+                -moz-border-radius:25px;
+                -webkkit-border-radius:25px;
+                border-radius: 25px
+                
+            }
+            .service-box{
+                width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin: auto;
+            }
+            .single-service{
+                flex-basis: 25%;
+                text-align: center;
+                padding-bottom: 20px;
+                color: #fff;
+                position: relative;
+            }
+            .single-service img{
+                width: 75%;
+            }
+            .overlay{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                border-radius: 7px;
+                cursor: pointer;
+                background: linear-gradient(rgba(0,0,0,0.5),#009688);
+                opacity: 0;
+                transition: 1s;
+            }
+            .single-service:hover .overlay{
+                opacity: 1;
+            }
+            .service-desc{
+                width: 70%;
+                position: absolute;
+                bottom: 0%;
+                left: 50%;
+                opacity: 0;
+                transform: translateX(-50%);
+                transition: 1s;
+            }
+            .service-desc:hover{
+                color: aqua;
+            }
+            hr{
+                background: #fff;
+                height: 2px;
+                border: 0;
+                margin: 15px auto;
+                width: 60%;
+            }
+            .service-desc p{
+                font-size: 14px;
+            }
+            .single-service:hover .service-desc{
+                bottom: 10%;
+                opacity: 1;
+            }
+            @media screen and (max-width: 770px){
+                .single-service{
+                    flex-basis: 100%;
+                    margin-bottom: 30px;
+                }
+                .service-desc p{
+                    font-size: 12px;
+                }
+                hr{
+                    margin: 5px auto;
+                }
+                .single-service:hover .service-desc{
+                    bottom: 25% !important;
+                }
+           }
+           </style>
+    </head>
+<body>
+    <nav>
+            <img src="logo.png" class="logo">
+            <ul>
+                <li><a href="mainpage.html">HOME</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="cart.html">CART</a></li>
+                <li><a href="delivery.html">DELIVERY</a></li>
+            </ul>
+        </nav>
+<section id="rest-service">
+    <h3 align="center" style="font-size: 35px;">Popular Foods</h3>
+    <br>
+    <marquee class="swipe"scrollamount="20">
+        <img src="f12.jpg">
+        <img src="f16.jpg">
+        <img src="f26.jpg">
+        <img src="f3.jpg">
+        <img src="f35.jpg">
+        <img src="f9.jpg">
+        <img src="f12.jpg">
+        <img src="f16.jpg">
+        <img src="f26.jpg">
+        <img src="f3.jpg">
+        <img src="f35.jpg">
+        <img src="f9.jpg">
+    </marquee>
+    
+</section>
+    <section id="rest-service">
+    <h3 align="center" style="font-size: 35px;">Recommended Items</h3>
+    <br>
+    <div class="bor">
+        <center>
+        <img src="f12.jpg">
+            <pre> </pre>
+        <img src="f16.jpg">
+        <img src="f26.jpg">
+        <img src="f3.jpg">
+            </center>
+        </div>
+    
+</section>
+<section id="service">
+    <h2 align="center" style="font-size: 34px;">Restaurants Near You</h2><br>
+<div class="service-box">
+    <div class="single-service">
+        <a href="food.html" style="padding: 0.5cm;"><img src="https://10619-2.s.cdn12.com/rests/original/109_510182905.jpg" width="150px" height="150px" border="0px">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Multi Cusine Restaurant</h3>
+            <hr>
+            <p>This restaurant is contributing with us from past two years and we are friendly each other</p>
+        </div></a>
+    </div>
+    <div class="single-service">
+        <a href="food.html" style="padding: 0.5cm;"><img src="https://content3.jdmagicbox.com/comp/kakinada/h7/9999px884.x884.171109114737.t2h7/catalogue/hungry-birds-bhaskar-nagar-kakinada-south-indian-restaurants-79xr5dg4dy.jpg" width="150px" height="150px" border="0px">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Hungry Birds Restaurant</h3>
+            <hr>
+            <p>This restaurant is contributing with us from past two years and we are friendly each other</p>
+        </div></a>
+    </div>
+    <div class="single-service">
+        <a href="food.html" style="padding: 0.5cm;"><img src="https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/vynvdmgd4ncgspn5viw5" width="150px" height="150px" border="0px">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>KFC Restaurant</h3>
+            <hr>
+            <p>This restaurant is contributing with us from past two years and we are friendly each other</p>
+        </div></a>
+    </div>
+    <div class="single-service">
+        <a href="food.html" style="padding: 0.5cm;"><img src="https://b.zmtcdn.com/data/pictures/5/20149295/1f48658f1ab815f88427e5130b3eef50.jpeg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" width="150px" height="150px" border="0px">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Zeeshan food Restaurant</h3>
+            <hr>
+            <p>This restaurant is contributing with us from past two years and we are friendly each other</p>
+            </div></a></div>
+    <div class="single-service">
+        <a href="food.html" style="padding: 0.5cm;"><img src="https://b.zmtcdn.com/data/pictures/5/19651945/f7b8d780521f86df174a02846ba12266.jpg?fit=around|771.75:416.25&crop=771.75:416.25;*,*" width="150px" height="150px" border="0px">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Yati food Restaurant</h3>
+            <hr>
+            <p>This restaurant is contributing with us from past two years and we are friendly each other</p>
+        </div></a>
+    </div>
+    <div class="single-service">
+        <a href="food.html" style="padding: 0.5cm;"><img src="https://b.zmtcdn.com/data/pictures/9/19981379/98ea2eaa235352d0c24b3a2c558e60c7.jpg" width="150px" height="150px" border="0px">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Rubick's Cube Restaurant</h3>
+            <hr>
+            <p>This restaurant is contributing with us from past two years and we are friendly each other</p>
+        </div></a>
+    </div>
+    <div class="single-service">
+        <a href="food.html" style="padding: 0.5cm;"><img src="https://lh5.googleusercontent.com/p/AF1QipPk0BhE7xv9uhzdbbpyWK24PoNACT2VrpJfVGWQ=w500-h500-k-no" width="150px" height="150px" border="0px">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>MC Donald's Restaurant</h3>
+            <hr>
+            <p>This restaurant is contributing with us from past two years and we are friendly each other</p>
+        </div></a>
+    </div>
+    <div class="single-service">
+        <a href="food.html" style="padding: 0.5cm;"><img src="https://ak-d.tripcdn.com/images/220j0g00000083k5vDD28_R_550_412_R5_Q70_D.jpg" width="150px" height="150px" border="0px">
+        <div class="overlay"></div>
+        <div class="service-desc">
+            <h3>Paradigm Restaurant</h3>
+            <hr>
+            <p>This restaurant is contributing with us from past two years and we are friendly each other</p>
+        </div></a>
+    </div>
+    </div>
+</section>
+</body>
+</html>
+    
