@@ -1,0 +1,234 @@
+body{
+    background: linear-gradient(to bottom, rgb(238, 229, 108), skyblue,lightgreen);
+}
+nav .logo{
+ width: 50px;
+ left: 0;   
+}
+nav ul{
+    float:right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 80px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+  font-size: 17px;
+  font-family: arial;
+  font-weight: bold;
+  transition: 0.4s ease-in-out; 
+}
+nav ul li:hover{
+    text-decoration: none;
+}
+h1{
+    color:  maroon;
+}
+.hi{
+    background: orange;
+    color: #fff;
+    padding: 5px;
+    border-radius: 12px;
+    font-size: 15px;
+    box-shadow: inset;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(f9.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card2{
+    background-image: url(f8.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card3{
+    background-image: url(f7.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card4{
+    background-image: url(f6.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card5{
+    background-image: url(f5.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card6{
+    background-image: url(f4.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card7{
+    background-image: url(f3.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card8{
+    background-image: url(f1.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card9{
+    background-image: url(f23.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card10{
+    background-image: url(f24.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card11{
+    background-image: url(f25.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card12{
+    background-image: url(f26.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card13{
+    background-image: url(f12.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card14{
+    background-image: url(f15.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card15{
+    background-image: url(f14.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card16{
+    background-image: url(f13.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card17{
+    background-image: url(f17.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card18{
+    background-image: url(f18.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card19{
+    background-image: url(f19.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card20{
+    background-image: url(f20.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card21{
+    background-image: url(f21.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card22{
+    background-image: url(f22.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card23{
+    background-image: url(f67.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card24{
+    background-image: url(f68.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card25{
+    background-image: url(f39.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card26{
+    background-image: url(f40.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card27{
+    background-image: url(f41.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card28{
+    background-image: url(f29.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card29{
+    background-image: url(f33.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card30{
+    background-image: url(f32.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card31{
+    background-image: url(f35.jpg);
+    width: 150px;
+    height: 150px;
+}
+.card32{
+    background-image: url(f69.jpg);
+    width: 150px;
+    height: 150px;
+}
+
+
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+}
+.card p{
+    text-shadow: 0 0 5px #000;
+    font-size: 8px;
+}
+.roll{
+    border: 50px 50px;
+    border-color: red;
+    display: flex;
+    margin: 10px 10px;
+
+}
